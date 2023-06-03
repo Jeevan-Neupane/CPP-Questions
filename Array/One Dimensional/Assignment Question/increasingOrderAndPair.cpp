@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    int array[] = {1,2,3,4};
+    int array[] = {-2,-1,0,3,6,8,11,12};
     int size = sizeof(array) / sizeof(array[0]);
-    int x = 9;
+    int x = 14;
     bool value=false;
     for (int i = 0; i < size; i++)
     {
@@ -14,9 +14,14 @@ int main()
             if((array[i]+array[j])==x){
                
                 value=true;
+                cout<<array[i]<<endl<<array[j]<<endl;
+                
             }
             
         }
+        // if(value){
+        //     break;
+        // }
     }
 
     if(value){
@@ -25,6 +30,8 @@ int main()
     else{
         cout<<"Value doesn't exist "<<endl;
     }
+
+    
 
 
     return 0;
